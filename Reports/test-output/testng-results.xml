@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="0" total="63" passed="62">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="228853" started-at="2019-06-03T09:18:19Z" finished-at="2019-06-03T09:22:07Z">
+  <suite name="Suite" duration-ms="225576" started-at="2019-06-03T10:46:33Z" finished-at="2019-06-03T10:50:18Z">
     <groups>
       <group name="Billing Reports Builders">
         <method signature="TestPaymentforInsurance.check1MonthFavPDFReport()[pri:36, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check1MonthFavPDFReport" class="com.reports.testcases.TestPaymentforInsurance"/>
@@ -49,9 +49,9 @@
         <method signature="TestPaymentforInsurance.vreifyForYesterdaysDateOnReFreshing()[pri:26, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="vreifyForYesterdaysDateOnReFreshing" class="com.reports.testcases.TestPaymentforInsurance"/>
       </group> <!-- Billing Reports Builders -->
     </groups>
-    <test name="Doctor Consultation Report Builder" duration-ms="228853" started-at="2019-06-03T09:18:19Z" finished-at="2019-06-03T09:22:07Z">
+    <test name="Doctor Consultation Report Builder" duration-ms="225576" started-at="2019-06-03T10:46:33Z" finished-at="2019-06-03T10:50:18Z">
       <class name="com.reports.testcases.TestPaymentforInsurance">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="setUp" is-config="true" duration-ms="14227" started-at="2019-06-03T09:18:19Z" finished-at="2019-06-03T09:18:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="setUp" is-config="true" duration-ms="14799" started-at="2019-06-03T10:46:33Z" finished-at="2019-06-03T10:46:47Z">
           <params>
             <param index="0">
               <value>
@@ -62,83 +62,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test3MonthPdf()[pri:1, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthPdf" duration-ms="278" started-at="2019-06-03T09:18:33Z" finished-at="2019-06-03T09:18:33Z">
+        <test-method status="PASS" signature="test3MonthPdf()[pri:1, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthPdf" duration-ms="306" started-at="2019-06-03T10:46:47Z" finished-at="2019-06-03T10:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3MonthPdf -->
-        <test-method status="PASS" signature="test3MonthCsv()[pri:2, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthCsv" duration-ms="235" started-at="2019-06-03T09:18:33Z" finished-at="2019-06-03T09:18:33Z">
+        <test-method status="PASS" signature="test3MonthCsv()[pri:2, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthCsv" duration-ms="225" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3MonthCsv -->
-        <test-method status="PASS" signature="test3MonthText()[pri:3, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthText" duration-ms="198" started-at="2019-06-03T09:18:33Z" finished-at="2019-06-03T09:18:34Z">
+        <test-method status="PASS" signature="test3MonthText()[pri:3, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthText" duration-ms="204" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3MonthText -->
-        <test-method status="PASS" signature="testDateFieldsBlank_pdf()[pri:4, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_pdf" duration-ms="164" started-at="2019-06-03T09:18:34Z" finished-at="2019-06-03T09:18:34Z">
+        <test-method status="PASS" signature="testDateFieldsBlank_pdf()[pri:4, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_pdf" duration-ms="289" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateFieldsBlank_pdf -->
-        <test-method status="PASS" signature="testDateFieldsBlank_csv()[pri:5, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_csv" duration-ms="160" started-at="2019-06-03T09:18:34Z" finished-at="2019-06-03T09:18:34Z">
+        <test-method status="PASS" signature="testDateFieldsBlank_csv()[pri:5, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_csv" duration-ms="189" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateFieldsBlank_csv -->
-        <test-method status="PASS" signature="testDateFieldsBlank_text()[pri:6, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_text" duration-ms="280" started-at="2019-06-03T09:18:34Z" finished-at="2019-06-03T09:18:34Z">
+        <test-method status="PASS" signature="testDateFieldsBlank_text()[pri:6, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_text" duration-ms="178" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateFieldsBlank_text -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_pdf()[pri:7, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_pdf" duration-ms="204" started-at="2019-06-03T09:18:34Z" finished-at="2019-06-03T09:18:34Z">
+        <test-method status="PASS" signature="testFromDateFieldBlank_pdf()[pri:7, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_pdf" duration-ms="195" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFromDateFieldBlank_pdf -->
-        <test-method status="PASS" signature="testToDateFieldBlank_pdf()[pri:8, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_pdf" duration-ms="161" started-at="2019-06-03T09:18:34Z" finished-at="2019-06-03T09:18:35Z">
+        <test-method status="PASS" signature="testToDateFieldBlank_pdf()[pri:8, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_pdf" duration-ms="180" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToDateFieldBlank_pdf -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_cvs()[pri:9, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_cvs" duration-ms="164" started-at="2019-06-03T09:18:35Z" finished-at="2019-06-03T09:18:35Z">
+        <test-method status="PASS" signature="testFromDateFieldBlank_cvs()[pri:9, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_cvs" duration-ms="197" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFromDateFieldBlank_cvs -->
-        <test-method status="PASS" signature="testToDateFieldBlank_cvs()[pri:10, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_cvs" duration-ms="161" started-at="2019-06-03T09:18:35Z" finished-at="2019-06-03T09:18:35Z">
+        <test-method status="PASS" signature="testToDateFieldBlank_cvs()[pri:10, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_cvs" duration-ms="193" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToDateFieldBlank_cvs -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_text()[pri:11, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_text" duration-ms="199" started-at="2019-06-03T09:18:35Z" finished-at="2019-06-03T09:18:35Z">
+        <test-method status="PASS" signature="testFromDateFieldBlank_text()[pri:11, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_text" duration-ms="231" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFromDateFieldBlank_text -->
-        <test-method status="PASS" signature="testToDateFieldBlank_text()[pri:12, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_text" duration-ms="214" started-at="2019-06-03T09:18:35Z" finished-at="2019-06-03T09:18:35Z">
+        <test-method status="PASS" signature="testToDateFieldBlank_text()[pri:12, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_text" duration-ms="178" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToDateFieldBlank_text -->
-        <test-method status="PASS" signature="testDateFieldsBlank_favSaveButton()[pri:13, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_favSaveButton" duration-ms="213" started-at="2019-06-03T09:18:35Z" finished-at="2019-06-03T09:18:35Z">
+        <test-method status="PASS" signature="testDateFieldsBlank_favSaveButton()[pri:13, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_favSaveButton" duration-ms="213" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDateFieldsBlank_favSaveButton -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_favSaveButton()[pri:14, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_favSaveButton" duration-ms="228" started-at="2019-06-03T09:18:36Z" finished-at="2019-06-03T09:18:36Z">
+        <test-method status="PASS" signature="testFromDateFieldBlank_favSaveButton()[pri:14, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_favSaveButton" duration-ms="259" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFromDateFieldBlank_favSaveButton -->
-        <test-method status="PASS" signature="testToDateFieldBlank_favSaveButton()[pri:15, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_favSaveButton" duration-ms="249" started-at="2019-06-03T09:18:36Z" finished-at="2019-06-03T09:18:36Z">
+        <test-method status="PASS" signature="testToDateFieldBlank_favSaveButton()[pri:15, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_favSaveButton" duration-ms="231" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToDateFieldBlank_favSaveButton -->
-        <test-method status="PASS" signature="checkForThisFinancialYear()[pri:16, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForThisFinancialYear" duration-ms="161" started-at="2019-06-03T09:18:36Z" finished-at="2019-06-03T09:18:36Z">
+        <test-method status="PASS" signature="checkForThisFinancialYear()[pri:16, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForThisFinancialYear" duration-ms="155" started-at="2019-06-03T10:46:51Z" finished-at="2019-06-03T10:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForThisFinancialYear -->
-        <test-method status="PASS" signature="checkForPreviousFinancialYear()[pri:17, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForPreviousFinancialYear" duration-ms="139" started-at="2019-06-03T09:18:36Z" finished-at="2019-06-03T09:18:36Z">
+        <test-method status="PASS" signature="checkForPreviousFinancialYear()[pri:17, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForPreviousFinancialYear" duration-ms="150" started-at="2019-06-03T10:46:51Z" finished-at="2019-06-03T10:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForPreviousFinancialYear -->
-        <test-method status="PASS" signature="verifyDateFieldsForYesterdayOptions()[pri:18, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForYesterdayOptions" duration-ms="635" started-at="2019-06-03T09:18:36Z" finished-at="2019-06-03T09:18:37Z">
+        <test-method status="PASS" signature="verifyDateFieldsForYesterdayOptions()[pri:18, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForYesterdayOptions" duration-ms="644" started-at="2019-06-03T10:46:51Z" finished-at="2019-06-03T10:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForYesterdayOptions -->
-        <test-method status="PASS" signature="verifyDateFieldsForTodayOptions()[pri:19, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForTodayOptions" duration-ms="343" started-at="2019-06-03T09:18:37Z" finished-at="2019-06-03T09:18:37Z">
+        <test-method status="PASS" signature="verifyDateFieldsForTodayOptions()[pri:19, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForTodayOptions" duration-ms="348" started-at="2019-06-03T10:46:52Z" finished-at="2019-06-03T10:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForTodayOptions -->
-        <test-method status="FAIL" signature="verifyDateFieldsForPreviousMonthOptions()[pri:20, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForPreviousMonthOptions" duration-ms="322" started-at="2019-06-03T09:18:37Z" finished-at="2019-06-03T09:18:38Z">
+        <test-method status="FAIL" signature="verifyDateFieldsForPreviousMonthOptions()[pri:20, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForPreviousMonthOptions" duration-ms="316" started-at="2019-06-03T10:46:52Z" finished-at="2019-06-03T10:46:52Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -183,35 +183,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForPreviousMonthOptions -->
-        <test-method status="PASS" signature="verifyDateFieldsForThisMonthOptions()[pri:21, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForThisMonthOptions" duration-ms="323" started-at="2019-06-03T09:18:38Z" finished-at="2019-06-03T09:18:38Z">
+        <test-method status="PASS" signature="verifyDateFieldsForThisMonthOptions()[pri:21, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForThisMonthOptions" duration-ms="317" started-at="2019-06-03T10:46:52Z" finished-at="2019-06-03T10:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForThisMonthOptions -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_pdf()[pri:22, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_pdf" duration-ms="170" started-at="2019-06-03T09:18:38Z" finished-at="2019-06-03T09:18:38Z">
+        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_pdf()[pri:22, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_pdf" duration-ms="184" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForFromPastToFuture_pdf -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_csv()[pri:23, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_csv" duration-ms="182" started-at="2019-06-03T09:18:38Z" finished-at="2019-06-03T09:18:38Z">
+        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_csv()[pri:23, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_csv" duration-ms="180" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForFromPastToFuture_csv -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_text()[pri:24, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_text" duration-ms="184" started-at="2019-06-03T09:18:38Z" finished-at="2019-06-03T09:18:38Z">
+        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_text()[pri:24, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_text" duration-ms="183" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForFromPastToFuture_text -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_toSaveFav()[pri:25, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_toSaveFav" duration-ms="230" started-at="2019-06-03T09:18:38Z" finished-at="2019-06-03T09:18:39Z">
+        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_toSaveFav()[pri:25, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_toSaveFav" duration-ms="230" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDateFieldsForFromPastToFuture_toSaveFav -->
-        <test-method status="PASS" signature="vreifyForYesterdaysDateOnReFreshing()[pri:26, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="vreifyForYesterdaysDateOnReFreshing" duration-ms="14322" started-at="2019-06-03T09:18:39Z" finished-at="2019-06-03T09:18:53Z">
+        <test-method status="PASS" signature="vreifyForYesterdaysDateOnReFreshing()[pri:26, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="vreifyForYesterdaysDateOnReFreshing" duration-ms="17444" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vreifyForYesterdaysDateOnReFreshing -->
-        <test-method status="PASS" signature="checkAutoCustomDateOption()[pri:27, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkAutoCustomDateOption" duration-ms="712" started-at="2019-06-03T09:18:53Z" finished-at="2019-06-03T09:18:54Z">
+        <test-method status="PASS" signature="checkAutoCustomDateOption()[pri:27, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkAutoCustomDateOption" duration-ms="729" started-at="2019-06-03T10:47:11Z" finished-at="2019-06-03T10:47:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAutoCustomDateOption -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="521" started-at="2019-06-03T09:18:54Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:18:54Z">
+        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="648" started-at="2019-06-03T10:47:12Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:12Z">
           <params>
             <param index="0">
               <value>
@@ -227,7 +227,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="550" started-at="2019-06-03T09:18:54Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:18:55Z">
+        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="613" started-at="2019-06-03T10:47:12Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:13Z">
           <params>
             <param index="0">
               <value>
@@ -243,7 +243,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="546" started-at="2019-06-03T09:18:55Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:18:55Z">
+        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="538" started-at="2019-06-03T10:47:13Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:13Z">
           <params>
             <param index="0">
               <value>
@@ -259,7 +259,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="666" started-at="2019-06-03T09:18:55Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:18:56Z">
+        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="604" started-at="2019-06-03T10:47:13Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:14Z">
           <params>
             <param index="0">
               <value>
@@ -275,7 +275,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="11490" started-at="2019-06-03T09:18:56Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:08Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="9627" started-at="2019-06-03T10:47:14Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:24Z">
           <params>
             <param index="0">
               <value>
@@ -291,7 +291,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3405" started-at="2019-06-03T09:19:08Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:11Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3581" started-at="2019-06-03T10:47:24Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:27Z">
           <params>
             <param index="0">
               <value>
@@ -307,7 +307,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3180" started-at="2019-06-03T09:19:11Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:14Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3452" started-at="2019-06-03T10:47:27Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:31Z">
           <params>
             <param index="0">
               <value>
@@ -323,7 +323,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3143" started-at="2019-06-03T09:19:14Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:17Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3331" started-at="2019-06-03T10:47:31Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:34Z">
           <params>
             <param index="0">
               <value>
@@ -339,7 +339,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="9730" started-at="2019-06-03T09:19:17Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:27Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="6438" started-at="2019-06-03T10:47:34Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:40Z">
           <params>
             <param index="0">
               <value>
@@ -355,7 +355,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3585" started-at="2019-06-03T09:19:27Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:31Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3537" started-at="2019-06-03T10:47:40Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:44Z">
           <params>
             <param index="0">
               <value>
@@ -371,7 +371,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="6082" started-at="2019-06-03T09:19:31Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:37Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="6063" started-at="2019-06-03T10:47:44Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:50Z">
           <params>
             <param index="0">
               <value>
@@ -387,7 +387,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3255" started-at="2019-06-03T09:19:37Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:19:40Z">
+        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3392" started-at="2019-06-03T10:47:50Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:53Z">
           <params>
             <param index="0">
               <value>
@@ -403,7 +403,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3924" started-at="2019-06-03T09:19:40Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:19:44Z">
+        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="4703" started-at="2019-06-03T10:47:53Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:58Z">
           <params>
             <param index="0">
               <value>
@@ -419,7 +419,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3835" started-at="2019-06-03T09:19:44Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:19:48Z">
+        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3946" started-at="2019-06-03T10:47:58Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:48:02Z">
           <params>
             <param index="0">
               <value>
@@ -435,7 +435,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3855" started-at="2019-06-03T09:19:48Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:19:52Z">
+        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3648" started-at="2019-06-03T10:48:02Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:48:06Z">
           <params>
             <param index="0">
               <value>
@@ -451,7 +451,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3358" started-at="2019-06-03T09:19:52Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T09:19:55Z">
+        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3267" started-at="2019-06-03T10:48:06Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:48:09Z">
           <params>
             <param index="0">
               <value>
@@ -467,39 +467,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option1()[pri:31, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option1" duration-ms="22969" started-at="2019-06-03T09:19:55Z" finished-at="2019-06-03T09:20:18Z">
+        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option1()[pri:31, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option1" duration-ms="19622" started-at="2019-06-03T10:48:09Z" finished-at="2019-06-03T10:48:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFavouriteReportsForDefaultDate_option1 -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option2()[pri:32, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option2" duration-ms="16527" started-at="2019-06-03T09:20:18Z" finished-at="2019-06-03T09:20:34Z">
+        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option2()[pri:32, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option2" duration-ms="14094" started-at="2019-06-03T10:48:29Z" finished-at="2019-06-03T10:48:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFavouriteReportsForDefaultDate_option2 -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option3()[pri:33, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option3" duration-ms="13860" started-at="2019-06-03T09:20:34Z" finished-at="2019-06-03T09:20:48Z">
+        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option3()[pri:33, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option3" duration-ms="14256" started-at="2019-06-03T10:48:43Z" finished-at="2019-06-03T10:48:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFavouriteReportsForDefaultDate_option3 -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_optionSelect()[pri:34, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_optionSelect" duration-ms="14110" started-at="2019-06-03T09:20:48Z" finished-at="2019-06-03T09:21:02Z">
+        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_optionSelect()[pri:34, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_optionSelect" duration-ms="14048" started-at="2019-06-03T10:48:57Z" finished-at="2019-06-03T10:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFavouriteReportsForDefaultDate_optionSelect -->
-        <test-method status="PASS" signature="switchToTheUser()[pri:35, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="switchToTheUser" duration-ms="1139" started-at="2019-06-03T09:21:02Z" finished-at="2019-06-03T09:21:03Z">
+        <test-method status="PASS" signature="switchToTheUser()[pri:35, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="switchToTheUser" duration-ms="1392" started-at="2019-06-03T10:49:11Z" finished-at="2019-06-03T10:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- switchToTheUser -->
-        <test-method status="PASS" signature="check1MonthFavPDFReport()[pri:36, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check1MonthFavPDFReport" duration-ms="9624" started-at="2019-06-03T09:21:03Z" finished-at="2019-06-03T09:21:13Z">
+        <test-method status="PASS" signature="check1MonthFavPDFReport()[pri:36, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check1MonthFavPDFReport" duration-ms="10309" started-at="2019-06-03T10:49:12Z" finished-at="2019-06-03T10:49:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check1MonthFavPDFReport -->
-        <test-method status="PASS" signature="check2MonthFavPDFReport()[pri:37, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check2MonthFavPDFReport" duration-ms="5711" started-at="2019-06-03T09:21:13Z" finished-at="2019-06-03T09:21:19Z">
+        <test-method status="PASS" signature="check2MonthFavPDFReport()[pri:37, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check2MonthFavPDFReport" duration-ms="5785" started-at="2019-06-03T10:49:23Z" finished-at="2019-06-03T10:49:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check2MonthFavPDFReport -->
-        <test-method status="PASS" signature="check3MonthFavPDFReport()[pri:38, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check3MonthFavPDFReport" duration-ms="5942" started-at="2019-06-03T09:21:19Z" finished-at="2019-06-03T09:21:25Z">
+        <test-method status="PASS" signature="check3MonthFavPDFReport()[pri:38, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check3MonthFavPDFReport" duration-ms="6054" started-at="2019-06-03T10:49:29Z" finished-at="2019-06-03T10:49:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check3MonthFavPDFReport -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="10007" started-at="2019-06-03T09:21:25Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:35Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="9845" started-at="2019-06-03T10:49:35Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:44Z">
           <params>
             <param index="0">
               <value>
@@ -515,7 +515,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="365" started-at="2019-06-03T09:21:35Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:35Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="367" started-at="2019-06-03T10:49:44Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:45Z">
           <params>
             <param index="0">
               <value>
@@ -531,7 +531,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="350" started-at="2019-06-03T09:21:35Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:35Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="406" started-at="2019-06-03T10:49:45Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:45Z">
           <params>
             <param index="0">
               <value>
@@ -547,7 +547,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="354" started-at="2019-06-03T09:21:35Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:36Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="376" started-at="2019-06-03T10:49:45Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:46Z">
           <params>
             <param index="0">
               <value>
@@ -563,7 +563,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="352" started-at="2019-06-03T09:21:36Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:36Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="374" started-at="2019-06-03T10:49:46Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:46Z">
           <params>
             <param index="0">
               <value>
@@ -579,7 +579,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="350" started-at="2019-06-03T09:21:36Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:37Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="354" started-at="2019-06-03T10:49:46Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:46Z">
           <params>
             <param index="0">
               <value>
@@ -595,7 +595,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="352" started-at="2019-06-03T09:21:37Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:37Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="400" started-at="2019-06-03T10:49:46Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:47Z">
           <params>
             <param index="0">
               <value>
@@ -611,7 +611,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="350" started-at="2019-06-03T09:21:37Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T09:21:37Z">
+        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="371" started-at="2019-06-03T10:49:47Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:47Z">
           <params>
             <param index="0">
               <value>
@@ -627,19 +627,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice_fav1()[pri:40, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice_fav1" duration-ms="17578" started-at="2019-06-03T09:21:37Z" finished-at="2019-06-03T09:21:55Z">
+        <test-method status="PASS" signature="checkForCorporateOffice_fav1()[pri:40, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice_fav1" duration-ms="18328" started-at="2019-06-03T10:49:47Z" finished-at="2019-06-03T10:50:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForCorporateOffice_fav1 -->
-        <test-method status="PASS" signature="chekForCorporateOffice_fav2()[pri:41, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav2" duration-ms="5861" started-at="2019-06-03T09:21:55Z" finished-at="2019-06-03T09:22:01Z">
+        <test-method status="PASS" signature="chekForCorporateOffice_fav2()[pri:41, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav2" duration-ms="5892" started-at="2019-06-03T10:50:05Z" finished-at="2019-06-03T10:50:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chekForCorporateOffice_fav2 -->
-        <test-method status="PASS" signature="chekForCorporateOffice_fav3()[pri:42, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav3" duration-ms="5836" started-at="2019-06-03T09:22:01Z" finished-at="2019-06-03T09:22:07Z">
+        <test-method status="PASS" signature="chekForCorporateOffice_fav3()[pri:42, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav3" duration-ms="5912" started-at="2019-06-03T10:50:11Z" finished-at="2019-06-03T10:50:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chekForCorporateOffice_fav3 -->
-        <test-method status="PASS" signature="closeBrowswe()[pri:100, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="closeBrowswe" duration-ms="858" started-at="2019-06-03T09:22:07Z" finished-at="2019-06-03T09:22:07Z">
+        <test-method status="PASS" signature="closeBrowswe()[pri:100, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="closeBrowswe" duration-ms="847" started-at="2019-06-03T10:50:17Z" finished-at="2019-06-03T10:50:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowswe -->
