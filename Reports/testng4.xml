@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<test name="Duty Roster Report Builder">
+  	 <parameter name = "builderName" value = "Duty Roster Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  </suite> <!-- Suite -->

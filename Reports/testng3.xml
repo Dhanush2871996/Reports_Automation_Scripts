@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+<test name="Insurance Claims Report Builder">
+  	 <parameter name = "builderName" value = "Insurance Claims Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Insurance Claim Details Report Builder">
+  	 <parameter name = "builderName" value = "Insurance Claim Details Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Insurance Claim Batch Report Builder">
+  	 <parameter name = "builderName" value = "Insurance Claim Batch Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  	
+  	 
+  	 </suite> <!-- Suite -->

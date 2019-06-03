@@ -1,0 +1,394 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>63/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 03 13:18:40 GST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>196 seconds (196217 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.check1MonthFavPDFReport()'><b>check1MonthFavPDFReport</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>10</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.check2MonthFavPDFReport()'><b>check2MonthFavPDFReport</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>6</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.check3MonthFavPDFReport()'><b>check3MonthFavPDFReport</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>5</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkAutoCustomDateOption()'><b>checkAutoCustomDateOption</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_option1()'><b>checkFavouriteReportsForDefaultDate_option1</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>17</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_option2()'><b>checkFavouriteReportsForDefaultDate_option2</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>12</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_option3()'><b>checkFavouriteReportsForDefaultDate_option3</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>12</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_optionSelect()'><b>checkFavouriteReportsForDefaultDate_optionSelect</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>11</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Yesterday, pdf</td>
+<td></td>
+<td>12</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Custom Date, pdf</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Today, pdf</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: This Month, pdf</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Previous Month, pdf</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Today, csv</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Previous Month, text</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice()'><b>checkForCorporateOffice</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: This Month, csv</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForCorporateOffice_fav1()'><b>checkForCorporateOffice_fav1</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>28</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForPreviousFinancialYear()'><b>checkForPreviousFinancialYear</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.checkForThisFinancialYear()'><b>checkForThisFinancialYear</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.chekForCorporateOffice_fav2()'><b>chekForCorporateOffice_fav2</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>6</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.chekForCorporateOffice_fav3()'><b>chekForCorporateOffice_fav3</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>5</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.closeBrowswe()'><b>closeBrowswe</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.createFavouritesForAllowedReportDurationoption()'><b>createFavouritesForAllowedReportDurationoption</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: 1, Please Select 1 Month Duration and save the report.</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.createFavouritesForAllowedReportDurationoption()'><b>createFavouritesForAllowedReportDurationoption</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: 2, Please Select 2 Months Duration and save the report.</td>
+<td></td>
+<td>2</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.createFavouritesForAllowedReportDurationoption()'><b>createFavouritesForAllowedReportDurationoption</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: 3, Please Select 3 Months Duration and save the report.</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.createFavouritesForAllowedReportDurationoption()'><b>createFavouritesForAllowedReportDurationoption</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: -- Select --, Please Select 3 Months Duration and save the report.</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Yesterday, pdf</td>
+<td></td>
+<td>5</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Custom Date, pdf</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Today, pdf</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: This Month, pdf</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Previous Month, pdf</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Today, csv</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: Previous Month, text</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.pdfTest()'><b>pdfTest</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: This Month, csv</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.switchToTheUser()'><b>switchToTheUser</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>1</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.test3MonthCsv()'><b>test3MonthCsv</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.test3MonthPdf()'><b>test3MonthPdf</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.test3MonthText()'><b>test3MonthText</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testDateFieldsBlank_csv()'><b>testDateFieldsBlank_csv</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testDateFieldsBlank_favSaveButton()'><b>testDateFieldsBlank_favSaveButton</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testDateFieldsBlank_pdf()'><b>testDateFieldsBlank_pdf</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testDateFieldsBlank_text()'><b>testDateFieldsBlank_text</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testFromDateFieldBlank_cvs()'><b>testFromDateFieldBlank_cvs</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testFromDateFieldBlank_favSaveButton()'><b>testFromDateFieldBlank_favSaveButton</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testFromDateFieldBlank_pdf()'><b>testFromDateFieldBlank_pdf</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testFromDateFieldBlank_text()'><b>testFromDateFieldBlank_text</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testToDateFieldBlank_cvs()'><b>testToDateFieldBlank_cvs</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testToDateFieldBlank_favSaveButton()'><b>testToDateFieldBlank_favSaveButton</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testToDateFieldBlank_pdf()'><b>testToDateFieldBlank_pdf</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.testToDateFieldBlank_text()'><b>testToDateFieldBlank_text</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyAllowedReportDurationDropdown()'><b>verifyAllowedReportDurationDropdown</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: 1, Please Select 1 Month Duration and save the report.</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyAllowedReportDurationDropdown()'><b>verifyAllowedReportDurationDropdown</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: 2, Please Select 2 Months Duration and save the report.</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyAllowedReportDurationDropdown()'><b>verifyAllowedReportDurationDropdown</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: 3, Please Select 3 Months Duration and save the report.</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyAllowedReportDurationDropdown()'><b>verifyAllowedReportDurationDropdown</b><br>Test class: com.reports.testcases.TestPaymentforInsurance<br>Parameters: -- Select --, Please Select 3 Months Duration and save the report.</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_csv()'><b>verifyDateFieldsForFromPastToFuture_csv</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_pdf()'><b>verifyDateFieldsForFromPastToFuture_pdf</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_text()'><b>verifyDateFieldsForFromPastToFuture_text</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_toSaveFav()'><b>verifyDateFieldsForFromPastToFuture_toSaveFav</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForPreviousMonthOptions()'><b>verifyDateFieldsForPreviousMonthOptions</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForThisMonthOptions()'><b>verifyDateFieldsForThisMonthOptions</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForTodayOptions()'><b>verifyDateFieldsForTodayOptions</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForYesterdayOptions()'><b>verifyDateFieldsForYesterdayOptions</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>0</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+<tr>
+<td title='com.reports.testcases.TestPaymentforInsurance.vreifyForYesterdaysDateOnReFreshing()'><b>vreifyForYesterdaysDateOnReFreshing</b><br>Test class: com.reports.testcases.TestPaymentforInsurance</td>
+<td></td>
+<td>9</td>
+<td>com.reports.testcases.TestPaymentforInsurance@2a2d45ba</td></tr>
+</table><p>
+</body>
+</html>

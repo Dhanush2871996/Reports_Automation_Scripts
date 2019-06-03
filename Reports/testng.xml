@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test name="Test">
+  <parameter name = "builderName" value = "Payment for Insurance"/>
+  	<classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	</classes>
+  	</test> <!-- Test -->
+  	
+ <test name="Patient Details Builder">
+  	 <parameter name = "builderName" value = "Patient Details Builder"/>
+  	<classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	</classes>	
+  </test> <!-- Test -->
+  
+   <test name="Visit Details Report Builder">
+  	 <parameter name = "builderName" value = "Visit Details Report Builder"/>
+  	<classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	</classes>	
+  </test> <!-- Test -->
+  
+  <test name="Patient Vitals Report Builder">
+  	<parameter name = "builderName" value = "Patient Vitals Report Builder"/>
+  	 <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	 </classes>	
+  </test> <!-- Test -->
+  
+   <test name="In Patient Report Builder">
+  	 <parameter name = "builderName" value = "In Patient Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  
+  
+  
+  
+  
+  
+  <test name="Birth Details Report Builder">
+  	 <parameter name = "builderName" value = "Birth Details Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="IP Stats/Bed Occupancy Report Builder">
+  	 <parameter name = "builderName" value = "IP Stats/Bed Occupancy Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Patient Duplicates Report Builder">
+  	 <parameter name = "builderName" value = "Patient Duplicates Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Patient Survey Response Details Report Builder">
+  	 <parameter name = "builderName" value = "Patient Survey Response Details Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Duty Roster Report Builder">
+  	 <parameter name = "builderName" value = "Duty Roster Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Sales Bills Builder">
+  	 <parameter name = "builderName" value = "Sales Bills Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Sale Items Builder">
+  	 <parameter name = "builderName" value = "Sale Items Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Prescription Lead Time Builder">
+  	 <parameter name = "builderName" value = "Prescription Lead Time Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Stock Consumption Report Builder">
+  	 <parameter name = "builderName" value = "Stock Consumption Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Stock Issues Builder">
+  	 <parameter name = "builderName" value = "Stock Issues Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Sales/Issues ABC Analysis Report Builder">
+  	 <parameter name = "builderName" value = "Sales/Issues ABC Analysis Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Patient Indent Items Builder">
+  	 <parameter name = "builderName" value = "Patient Indent Items Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Purchase Invoices Builder">
+  	 <parameter name = "builderName" value = "Purchase Invoices Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Purchase Items Builder">
+  	 <parameter name = "builderName" value = "Purchase Items Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Purchase Invoice Tax Report">
+  	 <parameter name = "builderName" value = "Purchase Invoice Tax Report"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Purchase Items Tax Report">
+  	 <parameter name = "builderName" value = "Purchase Items Tax Report"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Supplier Returns Builder">
+  	 <parameter name = "builderName" value = "Supplier Returns Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="PO - Items Builder">
+  	 <parameter name = "builderName" value = "PO - Items Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Purchase Order Builder">
+  	 <parameter name = "builderName" value = "Purchase Order Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Item Master Builder">
+  	 <parameter name = "builderName" value = "Item Master Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Detailed Stock Builder">
+  	 <parameter name = "builderName" value = "Detailed Stock Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Item-Wise Stock Builder">
+  	 <parameter name = "builderName" value = "Item-Wise Stock Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+  <test name="Indent Flow Builder">
+  	 <parameter name = "builderName" value = "Indent Flow Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+    <test name="Indent Items Detail Builder">
+  	 <parameter name = "builderName" value = "Indent Items Detail Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+    <test name="Stock Transfers Builder">
+  	 <parameter name = "builderName" value = "Stock Transfers Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+    <test name="Stock Adjustment Builder">
+  	 <parameter name = "builderName" value = "Stock Adjustment Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+    <test name="Stock Movement Report">
+  	 <parameter name = "builderName" value = "Stock Movement Report"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+    <test name="Reagent/Consumable Report Builder">
+  	 <parameter name = "builderName" value = "Reagent/Consumable Report Builder"/>
+  	  <classes>
+  			<class name = "com.reports.testcases.TestPaymentforInsurance"/>
+  	  </classes>	
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

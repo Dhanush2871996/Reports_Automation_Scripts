@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Doctor Consultation Report Builder(failed)">
+    <parameter name="builderName" value="Doctor Consultation Report Builder"/>
+    <classes>
+      <class name="com.reports.testcases.TestPaymentforInsurance">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyDateFieldsForPreviousMonthOptions"/>
+        </methods>
+      </class> <!-- com.reports.testcases.TestPaymentforInsurance -->
+    </classes>
+  </test> <!-- Doctor Consultation Report Builder(failed) -->
+</suite> <!-- Failed suite [Suite] -->
