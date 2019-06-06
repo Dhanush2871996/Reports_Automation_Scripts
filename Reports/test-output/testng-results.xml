@@ -1,161 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="63" passed="62">
+<testng-results ignored="0" total="7" passed="3" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="225576" started-at="2019-06-03T10:46:33Z" finished-at="2019-06-03T10:50:18Z">
+  <suite started-at="2019-06-04T12:37:49Z" name="Default suite" finished-at="2019-06-04T12:46:59Z" duration-ms="550637">
     <groups>
-      <group name="Billing Reports Builders">
-        <method signature="TestPaymentforInsurance.check1MonthFavPDFReport()[pri:36, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check1MonthFavPDFReport" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.check2MonthFavPDFReport()[pri:37, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check2MonthFavPDFReport" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.check3MonthFavPDFReport()[pri:38, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check3MonthFavPDFReport" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkAutoCustomDateOption()[pri:27, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkAutoCustomDateOption" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_option1()[pri:31, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option1" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_option2()[pri:32, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option2" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_option3()[pri:33, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option3" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkFavouriteReportsForDefaultDate_optionSelect()[pri:34, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_optionSelect" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkForCorporateOffice_fav1()[pri:40, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice_fav1" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkForPreviousFinancialYear()[pri:17, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForPreviousFinancialYear" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.checkForThisFinancialYear()[pri:16, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForThisFinancialYear" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.chekForCorporateOffice_fav2()[pri:41, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav2" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.chekForCorporateOffice_fav3()[pri:42, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav3" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.switchToTheUser()[pri:35, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="switchToTheUser" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.test3MonthCsv()[pri:2, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthCsv" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.test3MonthPdf()[pri:1, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthPdf" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.test3MonthText()[pri:3, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthText" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testDateFieldsBlank_csv()[pri:5, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_csv" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testDateFieldsBlank_favSaveButton()[pri:13, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_favSaveButton" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testDateFieldsBlank_pdf()[pri:4, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_pdf" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testDateFieldsBlank_text()[pri:6, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_text" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testFromDateFieldBlank_cvs()[pri:9, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_cvs" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testFromDateFieldBlank_favSaveButton()[pri:14, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_favSaveButton" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testFromDateFieldBlank_pdf()[pri:7, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_pdf" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testFromDateFieldBlank_text()[pri:11, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_text" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testToDateFieldBlank_cvs()[pri:10, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_cvs" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testToDateFieldBlank_favSaveButton()[pri:15, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_favSaveButton" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testToDateFieldBlank_pdf()[pri:8, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_pdf" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.testToDateFieldBlank_text()[pri:12, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_text" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_csv()[pri:23, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_csv" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_pdf()[pri:22, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_pdf" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_text()[pri:24, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_text" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForFromPastToFuture_toSaveFav()[pri:25, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_toSaveFav" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForPreviousMonthOptions()[pri:20, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForPreviousMonthOptions" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForThisMonthOptions()[pri:21, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForThisMonthOptions" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForTodayOptions()[pri:19, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForTodayOptions" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.verifyDateFieldsForYesterdayOptions()[pri:18, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForYesterdayOptions" class="com.reports.testcases.TestPaymentforInsurance"/>
-        <method signature="TestPaymentforInsurance.vreifyForYesterdaysDateOnReFreshing()[pri:26, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="vreifyForYesterdaysDateOnReFreshing" class="com.reports.testcases.TestPaymentforInsurance"/>
-      </group> <!-- Billing Reports Builders -->
     </groups>
-    <test name="Doctor Consultation Report Builder" duration-ms="225576" started-at="2019-06-03T10:46:33Z" finished-at="2019-06-03T10:50:18Z">
-      <class name="com.reports.testcases.TestPaymentforInsurance">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="setUp" is-config="true" duration-ms="14799" started-at="2019-06-03T10:46:33Z" finished-at="2019-06-03T10:46:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Doctor Consultation Report Builder]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2019-06-04T12:37:49Z" name="Default test" finished-at="2019-06-04T12:46:59Z" duration-ms="550637">
+      <class name="com.reports.testcases.TestCustomReportBuilders">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:37:49Z" name="setUp" finished-at="2019-06-04T12:37:59Z" duration-ms="10786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test3MonthPdf()[pri:1, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthPdf" duration-ms="306" started-at="2019-06-03T10:46:47Z" finished-at="2019-06-03T10:46:48Z">
+        <test-method signature="testCustomReportFor1Month_DepartmentWiseAllocation()[pri:1, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:37:59Z" name="testCustomReportFor1Month_DepartmentWiseAllocation" finished-at="2019-06-04T12:38:04Z" duration-ms="4964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3MonthPdf -->
-        <test-method status="PASS" signature="test3MonthCsv()[pri:2, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthCsv" duration-ms="225" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:48Z">
+        </test-method> <!-- testCustomReportFor1Month_DepartmentWiseAllocation -->
+        <test-method signature="testCustomReportFor4Month_DoctorRevenueDetailed()[pri:4, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:38:04Z" name="testCustomReportFor4Month_DoctorRevenueDetailed" finished-at="2019-06-04T12:38:20Z" duration-ms="15380" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3MonthCsv -->
-        <test-method status="PASS" signature="test3MonthText()[pri:3, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="test3MonthText" duration-ms="204" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3MonthText -->
-        <test-method status="PASS" signature="testDateFieldsBlank_pdf()[pri:4, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_pdf" duration-ms="289" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateFieldsBlank_pdf -->
-        <test-method status="PASS" signature="testDateFieldsBlank_csv()[pri:5, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_csv" duration-ms="189" started-at="2019-06-03T10:46:48Z" finished-at="2019-06-03T10:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateFieldsBlank_csv -->
-        <test-method status="PASS" signature="testDateFieldsBlank_text()[pri:6, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_text" duration-ms="178" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateFieldsBlank_text -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_pdf()[pri:7, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_pdf" duration-ms="195" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromDateFieldBlank_pdf -->
-        <test-method status="PASS" signature="testToDateFieldBlank_pdf()[pri:8, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_pdf" duration-ms="180" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testToDateFieldBlank_pdf -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_cvs()[pri:9, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_cvs" duration-ms="197" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromDateFieldBlank_cvs -->
-        <test-method status="PASS" signature="testToDateFieldBlank_cvs()[pri:10, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_cvs" duration-ms="193" started-at="2019-06-03T10:46:49Z" finished-at="2019-06-03T10:46:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testToDateFieldBlank_cvs -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_text()[pri:11, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_text" duration-ms="231" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromDateFieldBlank_text -->
-        <test-method status="PASS" signature="testToDateFieldBlank_text()[pri:12, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_text" duration-ms="178" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testToDateFieldBlank_text -->
-        <test-method status="PASS" signature="testDateFieldsBlank_favSaveButton()[pri:13, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testDateFieldsBlank_favSaveButton" duration-ms="213" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateFieldsBlank_favSaveButton -->
-        <test-method status="PASS" signature="testFromDateFieldBlank_favSaveButton()[pri:14, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testFromDateFieldBlank_favSaveButton" duration-ms="259" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFromDateFieldBlank_favSaveButton -->
-        <test-method status="PASS" signature="testToDateFieldBlank_favSaveButton()[pri:15, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="testToDateFieldBlank_favSaveButton" duration-ms="231" started-at="2019-06-03T10:46:50Z" finished-at="2019-06-03T10:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testToDateFieldBlank_favSaveButton -->
-        <test-method status="PASS" signature="checkForThisFinancialYear()[pri:16, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForThisFinancialYear" duration-ms="155" started-at="2019-06-03T10:46:51Z" finished-at="2019-06-03T10:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForThisFinancialYear -->
-        <test-method status="PASS" signature="checkForPreviousFinancialYear()[pri:17, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForPreviousFinancialYear" duration-ms="150" started-at="2019-06-03T10:46:51Z" finished-at="2019-06-03T10:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForPreviousFinancialYear -->
-        <test-method status="PASS" signature="verifyDateFieldsForYesterdayOptions()[pri:18, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForYesterdayOptions" duration-ms="644" started-at="2019-06-03T10:46:51Z" finished-at="2019-06-03T10:46:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDateFieldsForYesterdayOptions -->
-        <test-method status="PASS" signature="verifyDateFieldsForTodayOptions()[pri:19, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForTodayOptions" duration-ms="348" started-at="2019-06-03T10:46:52Z" finished-at="2019-06-03T10:46:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDateFieldsForTodayOptions -->
-        <test-method status="FAIL" signature="verifyDateFieldsForPreviousMonthOptions()[pri:20, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForPreviousMonthOptions" duration-ms="316" started-at="2019-06-03T10:46:52Z" finished-at="2019-06-03T10:46:52Z">
+        </test-method> <!-- testCustomReportFor4Month_DoctorRevenueDetailed -->
+        <test-method signature="testCustomReportFor5Month_RadiologyTATReport()[pri:5, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:38:20Z" name="testCustomReportFor5Month_RadiologyTATReport" finished-at="2019-06-04T12:40:30Z" duration-ms="130653" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[testCustomReportFor5Month_RadiologyTATReport got failed due to time out error. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: testCustomReportFor5Month_RadiologyTATReport got failed due to time out error. expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:568)
-at org.testng.Assert.assertEquals(Assert.java:578)
-at com.reports.testcases.TestPaymentforInsurance.verifyDateFieldsForPreviousMonthOptions(TestPaymentforInsurance.java:204)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at com.reports.testcases.TestCustomReportBuilders.failORPassStatment(TestCustomReportBuilders.java:62)
+at com.reports.testcases.TestCustomReportBuilders.testCustomReportFor5Month_RadiologyTATReport(TestCustomReportBuilders.java:176)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -182,468 +63,147 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDateFieldsForPreviousMonthOptions -->
-        <test-method status="PASS" signature="verifyDateFieldsForThisMonthOptions()[pri:21, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForThisMonthOptions" duration-ms="317" started-at="2019-06-03T10:46:52Z" finished-at="2019-06-03T10:46:53Z">
+        </test-method> <!-- testCustomReportFor5Month_RadiologyTATReport -->
+        <test-method signature="testCustomReportFor6Month_DepartmentwisePatientCount()[pri:6, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:40:30Z" name="testCustomReportFor6Month_DepartmentwisePatientCount" finished-at="2019-06-04T12:42:30Z" duration-ms="120047" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[testCustomReportFor6Month_DepartmentwisePatientCount got failed due to time out error. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: testCustomReportFor6Month_DepartmentwisePatientCount got failed due to time out error. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at com.reports.testcases.TestCustomReportBuilders.failORPassStatment(TestCustomReportBuilders.java:62)
+at com.reports.testcases.TestCustomReportBuilders.testCustomReportFor6Month_DepartmentwisePatientCount(TestCustomReportBuilders.java:197)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDateFieldsForThisMonthOptions -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_pdf()[pri:22, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_pdf" duration-ms="184" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
+        </test-method> <!-- testCustomReportFor6Month_DepartmentwisePatientCount -->
+        <test-method signature="testCustomReportFor7Month_VisitStatusReportforHealthAuthority()[pri:7, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:42:30Z" name="testCustomReportFor7Month_VisitStatusReportforHealthAuthority" finished-at="2019-06-04T12:44:47Z" duration-ms="137063" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[testCustomReportFor7Month_VisitStatusReportforHealthAuthority got failed due to time out error. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: testCustomReportFor7Month_VisitStatusReportforHealthAuthority got failed due to time out error. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at com.reports.testcases.TestCustomReportBuilders.failORPassStatment(TestCustomReportBuilders.java:62)
+at com.reports.testcases.TestCustomReportBuilders.testCustomReportFor7Month_VisitStatusReportforHealthAuthority(TestCustomReportBuilders.java:212)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDateFieldsForFromPastToFuture_pdf -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_csv()[pri:23, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_csv" duration-ms="180" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
+        </test-method> <!-- testCustomReportFor7Month_VisitStatusReportforHealthAuthority -->
+        <test-method signature="testCustomReportFor8Month_SubmissionRejectionRate()[pri:8, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:44:47Z" name="testCustomReportFor8Month_SubmissionRejectionRate" finished-at="2019-06-04T12:46:50Z" duration-ms="122297" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[testCustomReportFor8Month_SubmissionRejectionRate got failed due to time out error. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: testCustomReportFor8Month_SubmissionRejectionRate got failed due to time out error. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at com.reports.testcases.TestCustomReportBuilders.failORPassStatment(TestCustomReportBuilders.java:62)
+at com.reports.testcases.TestCustomReportBuilders.testCustomReportFor8Month_SubmissionRejectionRate(TestCustomReportBuilders.java:226)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDateFieldsForFromPastToFuture_csv -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_text()[pri:24, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_text" duration-ms="183" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
+        </test-method> <!-- testCustomReportFor8Month_SubmissionRejectionRate -->
+        <test-method signature="testCustomReportFor9Month_SponsorWiseClaimSubmissionList()[pri:9, instance:com.reports.testcases.TestCustomReportBuilders@4c40b76e]" started-at="2019-06-04T12:46:50Z" name="testCustomReportFor9Month_SponsorWiseClaimSubmissionList" finished-at="2019-06-04T12:46:59Z" duration-ms="9396" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDateFieldsForFromPastToFuture_text -->
-        <test-method status="PASS" signature="verifyDateFieldsForFromPastToFuture_toSaveFav()[pri:25, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyDateFieldsForFromPastToFuture_toSaveFav" duration-ms="230" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:46:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDateFieldsForFromPastToFuture_toSaveFav -->
-        <test-method status="PASS" signature="vreifyForYesterdaysDateOnReFreshing()[pri:26, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="vreifyForYesterdaysDateOnReFreshing" duration-ms="17444" started-at="2019-06-03T10:46:53Z" finished-at="2019-06-03T10:47:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vreifyForYesterdaysDateOnReFreshing -->
-        <test-method status="PASS" signature="checkAutoCustomDateOption()[pri:27, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkAutoCustomDateOption" duration-ms="729" started-at="2019-06-03T10:47:11Z" finished-at="2019-06-03T10:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAutoCustomDateOption -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="648" started-at="2019-06-03T10:47:12Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 1 Month Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="613" started-at="2019-06-03T10:47:12Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 2 Months Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="538" started-at="2019-06-03T10:47:13Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 3 Months Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="verifyAllowedReportDurationDropdown(java.lang.String, java.lang.String)[pri:28, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="verifyAllowedReportDurationDropdown" duration-ms="604" started-at="2019-06-03T10:47:13Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[-- Select --]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 3 Months Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllowedReportDurationDropdown -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="9627" started-at="2019-06-03T10:47:14Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Yesterday]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3581" started-at="2019-06-03T10:47:24Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Custom Date]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3452" started-at="2019-06-03T10:47:27Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Today]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3331" started-at="2019-06-03T10:47:31Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[This Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="6438" started-at="2019-06-03T10:47:34Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Previous Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3537" started-at="2019-06-03T10:47:40Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Today]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[csv]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="6063" started-at="2019-06-03T10:47:44Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Previous Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[text]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="pdfTest(java.lang.String, java.lang.String)[pri:29, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="pdfTest" duration-ms="3392" started-at="2019-06-03T10:47:50Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:47:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[This Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[csv]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdfTest -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="4703" started-at="2019-06-03T10:47:53Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:47:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 1 Month Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3946" started-at="2019-06-03T10:47:58Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:48:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 2 Months Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3648" started-at="2019-06-03T10:48:02Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:48:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 3 Months Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="createFavouritesForAllowedReportDurationoption(java.lang.String, java.lang.String)[pri:30, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="createFavouritesForAllowedReportDurationoption" duration-ms="3267" started-at="2019-06-03T10:48:06Z" data-provider="allowedReportDurationoption" finished-at="2019-06-03T10:48:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[-- Select --]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Please Select 3 Months Duration and save the report.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createFavouritesForAllowedReportDurationoption -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option1()[pri:31, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option1" duration-ms="19622" started-at="2019-06-03T10:48:09Z" finished-at="2019-06-03T10:48:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFavouriteReportsForDefaultDate_option1 -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option2()[pri:32, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option2" duration-ms="14094" started-at="2019-06-03T10:48:29Z" finished-at="2019-06-03T10:48:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFavouriteReportsForDefaultDate_option2 -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_option3()[pri:33, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_option3" duration-ms="14256" started-at="2019-06-03T10:48:43Z" finished-at="2019-06-03T10:48:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFavouriteReportsForDefaultDate_option3 -->
-        <test-method status="PASS" signature="checkFavouriteReportsForDefaultDate_optionSelect()[pri:34, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkFavouriteReportsForDefaultDate_optionSelect" duration-ms="14048" started-at="2019-06-03T10:48:57Z" finished-at="2019-06-03T10:49:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFavouriteReportsForDefaultDate_optionSelect -->
-        <test-method status="PASS" signature="switchToTheUser()[pri:35, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="switchToTheUser" duration-ms="1392" started-at="2019-06-03T10:49:11Z" finished-at="2019-06-03T10:49:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- switchToTheUser -->
-        <test-method status="PASS" signature="check1MonthFavPDFReport()[pri:36, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check1MonthFavPDFReport" duration-ms="10309" started-at="2019-06-03T10:49:12Z" finished-at="2019-06-03T10:49:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check1MonthFavPDFReport -->
-        <test-method status="PASS" signature="check2MonthFavPDFReport()[pri:37, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check2MonthFavPDFReport" duration-ms="5785" started-at="2019-06-03T10:49:23Z" finished-at="2019-06-03T10:49:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check2MonthFavPDFReport -->
-        <test-method status="PASS" signature="check3MonthFavPDFReport()[pri:38, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="check3MonthFavPDFReport" duration-ms="6054" started-at="2019-06-03T10:49:29Z" finished-at="2019-06-03T10:49:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check3MonthFavPDFReport -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="9845" started-at="2019-06-03T10:49:35Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Yesterday]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="367" started-at="2019-06-03T10:49:44Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Custom Date]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="406" started-at="2019-06-03T10:49:45Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Today]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="376" started-at="2019-06-03T10:49:45Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[This Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="374" started-at="2019-06-03T10:49:46Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Previous Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pdf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="354" started-at="2019-06-03T10:49:46Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Today]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[csv]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="400" started-at="2019-06-03T10:49:46Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Previous Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[text]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice(java.lang.String, java.lang.String)[pri:39, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice" duration-ms="371" started-at="2019-06-03T10:49:47Z" data-provider="dateRangeDropDownOptions" finished-at="2019-06-03T10:49:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[This Month]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[csv]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice -->
-        <test-method status="PASS" signature="checkForCorporateOffice_fav1()[pri:40, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="checkForCorporateOffice_fav1" duration-ms="18328" started-at="2019-06-03T10:49:47Z" finished-at="2019-06-03T10:50:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkForCorporateOffice_fav1 -->
-        <test-method status="PASS" signature="chekForCorporateOffice_fav2()[pri:41, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav2" duration-ms="5892" started-at="2019-06-03T10:50:05Z" finished-at="2019-06-03T10:50:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chekForCorporateOffice_fav2 -->
-        <test-method status="PASS" signature="chekForCorporateOffice_fav3()[pri:42, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="chekForCorporateOffice_fav3" duration-ms="5912" started-at="2019-06-03T10:50:11Z" finished-at="2019-06-03T10:50:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chekForCorporateOffice_fav3 -->
-        <test-method status="PASS" signature="closeBrowswe()[pri:100, instance:com.reports.testcases.TestPaymentforInsurance@2a2d45ba]" name="closeBrowswe" duration-ms="847" started-at="2019-06-03T10:50:17Z" finished-at="2019-06-03T10:50:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowswe -->
-      </class> <!-- com.reports.testcases.TestPaymentforInsurance -->
-    </test> <!-- Doctor Consultation Report Builder -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testCustomReportFor9Month_SponsorWiseClaimSubmissionList -->
+      </class> <!-- com.reports.testcases.TestCustomReportBuilders -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

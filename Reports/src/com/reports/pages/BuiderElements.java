@@ -77,8 +77,10 @@ public class BuiderElements extends BaseTest
 	WebElement fieldsListBox;
 	
 	@FindBy(xpath="//*[@id=\"listFieldsDiv\"]/fieldset/table/tbody/tr/td[4]/div/button[3]/img")
-	public
+	public         
 	WebElement deselecButton;
+	
+	
 	
 	public BuiderElements(WebDriver driver) 
 	{

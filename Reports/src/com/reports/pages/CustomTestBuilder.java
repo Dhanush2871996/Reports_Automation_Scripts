@@ -60,6 +60,7 @@ public class CustomTestBuilder extends CustomReports
 	
 	public void provideAccess() throws InterruptedException
 	{
+		
 		clickOnDepartmentWiseAllocationReport(driver);
 		rightsConfig("1");
 		
@@ -78,8 +79,8 @@ public class CustomTestBuilder extends CustomReports
 		clickOnDepartmentwisePatientCount(driver);
 		rightsConfig("6");
 		
-//		clickOnConsumableItemsPriceReport(driver); //not used since there is no "date field" only
-//		rightsConfig("7");
+		clickOnConsumableItemsPriceReport(driver); //not used since there is no "date field" only
+		rightsConfig("7");
 		
 		clickOnVisitStatusReportforHealthAuthority(driver);
 		rightsConfig("7");
@@ -102,8 +103,8 @@ public class CustomTestBuilder extends CustomReports
 		clickOnRevenueProgressReport(driver);
 		rightsConfig("1");
 		
-//		clickOnDetailedStockReport(driver);//not part of automation since it does not have from and to date fields
-//		rightsConfig("5");
+		clickOnDetailedStockReport(driver);//not part of automation since it does not have from and to date fields
+		rightsConfig("5");
 		
 		clickOnPatientReferralReport(driver);
 		rightsConfig("2");
@@ -117,11 +118,11 @@ public class CustomTestBuilder extends CustomReports
 		clickOnStockRejectionReport(driver);
 		rightsConfig("5");
 		
-//		clickOnBifurcationReport(driver);// not part of script since it of type pdf format
-//		rightsConfig("7");
-//		
-//		clickOnReconciliationReport(driver);// not part of script since it of type pdf format
-//		rightsConfig("8");
+		clickOnBifurcationReport(driver);// not part of script since it of type pdf format
+		rightsConfig("7");
+		
+		clickOnReconciliationReport(driver);// not part of script since it of type pdf format
+		rightsConfig("8");
 	
 		clickOnBillStatusReport(driver); //Run this report every time so that page will get scroll upward. 
 		rightsConfig("6");
@@ -149,7 +150,7 @@ public class CustomTestBuilder extends CustomReports
 		
 		clickOnDRGVarianceReport(driver);
 		rightsConfig("2");
-		/*
+		
 		clickOnDoctorPerformanceReport(driver);
 		rightsConfig("3");
 		
@@ -162,8 +163,8 @@ public class CustomTestBuilder extends CustomReports
 		clickOnRemittanceAdviceReport(driver);
 		rightsConfig("6");
 		
-//		clickOnPACSOrderStatisticsReport(driver);//not part of the automation since it is pdf
-//		rightsConfig("2");
+		clickOnPACSOrderStatisticsReport(driver);//not part of the automation since it is pdf
+		rightsConfig("2");
 		
 		clickOnResubmissionReport(driver);
 		rightsConfig("7");
@@ -174,11 +175,11 @@ public class CustomTestBuilder extends CustomReports
 		clickOnDischargeStatusReport(driver);
 		rightsConfig("9");
 		
-//		clickOnStockStatusReport(driver);//not part of the automation since it does not have from and to date field
-//		rightsConfig("6");
+		clickOnStockStatusReport(driver);//not part of the automation since it does not have from and to date field
+		rightsConfig("6");
 		
-//		clickonPowerscribeReport(driver);//not part of the automation since it is pdf
-//		rightsConfig("7");
+		clickonPowerscribeReport(driver);//not part of the automation since it is pdf
+		rightsConfig("7");
 		
 		clickonAdvanceAndRefundReceipts(driver);
 		rightsConfig("10");
@@ -201,9 +202,9 @@ public class CustomTestBuilder extends CustomReports
 		clickonCollectionLogReport(driver);
 		rightsConfig("4");
 		
-		clickonNewAppointmentTATReport(driver);
-		rightsConfig("5");
-*/
+//		clickonNewAppointmentTATReport(driver);
+//		rightsConfig("5");
+
 	}
 	
 	//test1
@@ -541,11 +542,11 @@ public class CustomTestBuilder extends CustomReports
 		CustomTestBuilder.getWindowHandle_SwitchTab();
 		return mainAddres;
 	}
-	//test42
-	public String runCustomReportsFor5Month_41th() throws InterruptedException
-	{
-		customReportsRunByUser.clickonNewAppointmentTATReport();
-		CustomTestBuilder.getWindowHandle_SwitchTab();
-		return mainAddres;
-	}
+//	//test42
+//	public String runCustomReportsFor5Month_41th() throws InterruptedException
+//	{
+//		customReportsRunByUser.clickonNewAppointmentTATReport();
+//		CustomTestBuilder.getWindowHandle_SwitchTab();
+//		return mainAddres;
+//	}
 }

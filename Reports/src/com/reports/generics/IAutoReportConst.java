@@ -10,7 +10,7 @@ public interface IAutoReportConst
 	String CHROME_VALUE = "/home/debjyoti/Desktop/Dhanush_Documents/KT_22-02-2019/OT charges and Anestisia harges calculation/chromedriver";
 	
 	String FIREFOX_KEY = "webdriver.gecko.driver";
-	String FIREFOX_VALUE = "/home/debjyoti/Desktop/Driver/geckodriver";
+	String FIREFOX_VALUE = "/home/manish/Desktop/Driver/geckodriver";
 	
 	
 	long ETO = 10;

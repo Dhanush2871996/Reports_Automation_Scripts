@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 // Modified to test Github
-//Modified to tet 2nd time
+//Modified to tet 2nd time chck
 public class BaseTest implements IAutoReportConst
 {
 	public static WebDriver driver;

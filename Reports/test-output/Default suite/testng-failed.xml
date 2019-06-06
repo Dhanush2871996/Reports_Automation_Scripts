@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.reports.testcases.TestCustomReportBuilders">
         <methods>
-          <include name="testCustomReportFor4Month_DoctorRevenueDetailed"/>
-          <include name="testCustomReportFor3Month_CashCreditSplitReport"/>
-          <include name="testCustomReportFor2Month_DoctorWisePatientCount"/>
-          <include name="testCustomReportFor4Month_InsuranceClaimBatchReport"/>
-          <include name="testCustomReportFor5Month_StockRejectionReport"/>
-          <include name="testCustomReportFor3Month_BillAdjustmentEntriesList"/>
-          <include name="testCustomReportFor1Month_DepartmentWiseAllocation"/>
-          <include name="testCustomReportFor12Month_AirmileReport"/>
           <include name="setUp"/>
-          <include name="testCustomReportFor2Month_PatientReferralReport"/>
           <include name="testCustomReportFor5Month_RadiologyTATReport"/>
+          <include name="testCustomReportFor6Month_DepartmentwisePatientCount"/>
           <include name="testCustomReportFor7Month_VisitStatusReportforHealthAuthority"/>
           <include name="testCustomReportFor8Month_SubmissionRejectionRate"/>
-          <include name="testCustomReportFor6Month_DepartmentwisePatient"/>
-          <include name="testCustomReportFor11Month_RepeatingDiagnosisReport"/>
-          <include name="testCustomReportFor10Month_MedicalCheckupReport"/>
-          <include name="testCustomReportFor1Month_RevenueProgressReport"/>
-          <include name="testCustomReportFor9Month_SponsorWiseClaimSubmissionList"/>
         </methods>
       </class> <!-- com.reports.testcases.TestCustomReportBuilders -->
     </classes>

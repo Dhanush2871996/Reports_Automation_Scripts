@@ -414,11 +414,15 @@ public class TestBuilders extends BaseTest{
 		
 		String addrMain = driver.getWindowHandle();//Stores Main Window Address
 
-		if(option!=null)
+		if(option!=null & !option.equals("custom"))
 			{
 			builderElements.selectDateRangeOPtion(option);// Dependent code we have to test once
 			builderElements.numOfFieldsSelected();
 			}
+		else if(option.equals("custom"))
+		{
+			builderElements.numOfFieldsSelected();
+		}
 	
 //		try {
 //					builderElements.clickOnPdfButton();
@@ -445,7 +449,7 @@ public class TestBuilders extends BaseTest{
 		System.out.println("stage2 "+driver.getTitle());
 		
 		try{
-			WebDriverWait wait = new WebDriverWait(driver,90);
+			WebDriverWait wait = new WebDriverWait(driver,100);
 			wait.until(ExpectedConditions.visibilityOf(builderElements.pdfDate));
 			}
 		
@@ -453,12 +457,12 @@ public class TestBuilders extends BaseTest{
 		{
 			System.out.println("Time out error");
 			
-				System.out.println(addrMain+" =====> "+driver.getWindowHandle());
-				driver.close();		 
-			
 			System.out.println(addrMain+" =====> "+driver.getWindowHandle());
+			driver.close();		 
+			
+			//System.out.println(addrMain+" =====> "+driver.getWindowHandle());
 			driver.switchTo().window(addrMain);
-			Thread.sleep(2000);
+			Thread.sleep(6100);//wait till the server time out
 			return false;
 		}
 		
@@ -473,7 +477,7 @@ public class TestBuilders extends BaseTest{
 //			System.out.println("Waiting "+x+" mins");
 //		}
 		
-		System.out.println("ddscsdfsdfsdf");
+		System.out.println("pdf date :");
 		String pdfDateRange = builderElements.getPdfDate();
 		
 		 fromDate = pdfDateRange.substring(0, 10);

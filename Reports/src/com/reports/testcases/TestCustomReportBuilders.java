@@ -25,6 +25,7 @@ public class TestCustomReportBuilders extends BaseTest
 	CustomTestBuilder customTestBuilder;
 	TestBuilders testBuilders;
 	CustomReportsRunByUser customReportsRunByUser;
+	TestCustomReportBuilders testCustomReportBuilders;
 	
 	@BeforeClass
 	public void setUp() throws InterruptedException
@@ -36,7 +37,7 @@ public class TestCustomReportBuilders extends BaseTest
 		
 //		customReports.clickOnCustomReportsDropdown();
 //		customReports.clickOnReportListLink();
-//	
+//
 //		customTestBuilder.provideAccess(); //give access to all the custom report for an particular user
 		
 		builderElements = new BuiderElements(driver);
@@ -45,15 +46,8 @@ public class TestCustomReportBuilders extends BaseTest
 	
 		customTestBuilder.navigateToCustomDashboard();
 		
-		
+		testCustomReportBuilders = new TestCustomReportBuilders();
 	}
-	
-//	@Test(priority = 1)
-//	public void test1() throws InterruptedException
-//	{
-//		customTestBuilder.navigateToCustomDashboard();
-//		customTestBuilder.runCustomReportFor1Month();
-//	}
 	
 	public static void closeAndSwitchTab(String mainAddres1)
 	{
@@ -61,37 +55,33 @@ public class TestCustomReportBuilders extends BaseTest
 		driver.switchTo().window(mainAddres1);
 	}
 	
-	public static void failORPassStatment(boolean a, int month)
+	public static void failORPassStatment(boolean a, String monthReportName)
 	{
 		if(a== false)
 		{
-			Assert.assertEquals(a,true, "testCustomReportFor"+month+"Month got failed due to time out error.");
+			Assert.assertEquals(a,true, "testCustomReportFor"+monthReportName+" got failed due to time out error.");
 		}
 		else
-			Assert.assertEquals(a,true, "testCustomReportFor"+month+"Month got failed.");
+			Assert.assertEquals(a,true, "testCustomReportFor"+monthReportName+" got failed.");
 		
 	}
 	//For all the negative cases i am calling all the methods from "TestBuilders" class
 	
 
-	public void testingAllTheNagativeCases() throws InterruptedException
+	public  void testingAllTheNagativeCases() throws InterruptedException
 	{
-		 String mainAddress = customTestBuilder.initializeElement();
-	
-//		 boolean test = testBuilders.test3MonthPdf("01-01-2019", "20-01-2019");
-//		 Assert.assertEquals(test,true,"testing 3 month got failed");
+//		 String mainAddress = customTestBuilder.initializeElement();
+//	
+////		 boolean test = testBuilders.test3MonthPdf("01-01-2019", "20-01-2019");
+////		 Assert.assertEquals(test,true,"testing 3 month got failed");
 		 
-		
-		System.out.println("test start 1.1");
+		testBuilders = new TestBuilders();
 		boolean a= testBuilders.testDateFieldsBlank_pdf();
 		Assert.assertEquals(a,true,"Blank date for generating pdf report got failed");
 		
-		
-		System.out.println("test start 2");
 		boolean b = testBuilders.testDateFieldsBlank_csv();
 		Assert.assertEquals(b,true,"Blank date for generating csv report got failed");
 		
-		System.out.println("test start 3");
 		boolean c = testBuilders.testDateFieldsBlank_text();
 		Assert.assertEquals(c,true,"Blank date for generating text report got failed");
 		
@@ -113,121 +103,127 @@ public class TestCustomReportBuilders extends BaseTest
 		boolean i = testBuilders.testToDateFieldBlank_text();
 		Assert.assertEquals(i,true, "testToDateFieldBlank_text got failed.");
 		
-		//boolean j = 
-		
-		driver.close();
-		driver.switchTo().window(mainAddress);
-		
-		System.out.println("test ends.");
 	}
-
-
+	
 	@Test(priority=1)
 	public void testCustomReportFor1Month_DepartmentWiseAllocation() throws InterruptedException
 	{
+
 		String mainAddres = customTestBuilder.runCustomReportfor1Month_1st();
+		testCustomReportBuilders.testingAllTheNagativeCases();
+		
 		testBuilders = new TestBuilders();
 		boolean a =testBuilders.verifyPdfDateRange("Previous Month");
 		Assert.assertEquals(a,true, "testCustomReportFor1Month got failed.");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 1);
+		TestCustomReportBuilders.failORPassStatment(a, "1Month_DepartmentWiseAllocation");
 	}
-
-	
+	/*
 	@Test(priority = 2)
 	public void testCustomReportFor2Month_DoctorWisePatientCount() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportfor2Month_2nd();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
 		builderElements.enterFromAndToDate("01-01-2019", "28-02-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 2);
+		TestCustomReportBuilders.failORPassStatment(a, "2Month_DoctorWisePatientCount");
 	}
-	
-	
+
 	@Test(priority = 3)
 	public void testCustomReportFor3Month_BillAdjustmentEntriesList() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportfor3Month_3th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
 		builderElements.enterFromAndToDate("01-01-2019", "03-04-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 3);
+		TestCustomReportBuilders.failORPassStatment(a, "3Month_BillAdjustmentEntriesList");
 	}
-	
-	
+	*/
 	@Test(priority=4)
 	public void testCustomReportFor4Month_DoctorRevenueDetailed() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor4Month_4th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
 		builderElements.enterFromAndToDate("01-01-2019", "04-05-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 4);
+		TestCustomReportBuilders.failORPassStatment(a, "4Month_DoctorRevenueDetailed");
 	}
 	
-	
+	//always give time out error
 	@Test(priority=5)
 	public void testCustomReportFor5Month_RadiologyTATReport() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor5Month_5th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "02-06-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 5);
+		TestCustomReportBuilders.failORPassStatment(a, "5Month_RadiologyTATReport");
+	
 	}
 	
+	//Always give time out error when we are running
 	@Test(priority=6)
-	public void testCustomReportFor6Month_DepartmentwisePatient() throws InterruptedException
+	public void testCustomReportFor6Month_DepartmentwisePatientCount() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor6Month_6th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
+		System.out.println("title 1 the page is: "+driver.getTitle());
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-07-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
+		System.out.println("title 2 of the pg: "+driver.getTitle());
 		
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 6);
+		
+		System.out.println("title 3 of the pg: "+driver.getTitle());
+		TestCustomReportBuilders.failORPassStatment(a, "6Month_DepartmentwisePatientCount");
 			
 	}
-	
+	//always give time out error when we will be running
 	@Test(priority=7)
 	public void testCustomReportFor7Month_VisitStatusReportforHealthAuthority() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor7Month_7th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-08-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 7);
+		TestCustomReportBuilders.failORPassStatment(a, "7Month_VisitStatusReportforHealthAuthority");
 	}
-	
+	//give time out error when run this test
 	@Test(priority=8)
 	public void testCustomReportFor8Month_SubmissionRejectionRate() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor8Month_8th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-09-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 8);
+		TestCustomReportBuilders.failORPassStatment(a, "8Month_SubmissionRejectionRate");
 	}
 
 	@Test(priority=9)
@@ -235,13 +231,14 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor9Month_9th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-10-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-1-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);	
+		boolean a =testBuilders.verifyPdfDateRange("custom");	
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
 		
-		TestCustomReportBuilders.failORPassStatment(a, 9);
+		TestCustomReportBuilders.failORPassStatment(a, "9Month_SponsorWiseClaimSubmissionList");
 	}
 	
 	@Test(priority=10)
@@ -249,27 +246,29 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor10Month_10th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-11-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
 		
-		TestCustomReportBuilders.failORPassStatment(a, 10);
+		TestCustomReportBuilders.failORPassStatment(a, "10Month_MedicalCheckupReport");
 	}
-	
+	//
 	@Test(priority=11)
 	public void testCustomReportFor11Month_RepeatingDiagnosisReport() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor11Month_11th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-12-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
 		
-		TestCustomReportBuilders.failORPassStatment(a, 11);
+		TestCustomReportBuilders.failORPassStatment(a, "11Month_RepeatingDiagnosisReport");
 	}
 	
 	@Test(priority=12)
@@ -277,26 +276,28 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor12Month_12th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "01-01-2020");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 12);
+		TestCustomReportBuilders.failORPassStatment(a, "12Month_AirmileReport");
 	}
-	
+	//always give the time out error when we run this report
 	@Test(priority=13)
 	public void testCustomReportFor1Month_RevenueProgressReport() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor1Month_13th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "31-01-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 1);
+		TestCustomReportBuilders.failORPassStatment(a, "1Month_RevenueProgressReport");
 	}
 	
 	@Test(priority=14)
@@ -304,12 +305,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor2Month_14th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "28-02-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 2);
+		TestCustomReportBuilders.failORPassStatment(a, "2Month_PatientReferralReport");
 	}
 	
 	@Test(priority=15)
@@ -317,12 +319,14 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor3Month_15th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "03-04-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 3);
+		System.out.println("title 1 is: "+driver.getTitle());
+		TestCustomReportBuilders.failORPassStatment(a, "3Month_CashCreditSplitReport");
 	}
 	
 	@Test(priority=16)
@@ -330,12 +334,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor4Month_16th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-05-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 4);
+		TestCustomReportBuilders.failORPassStatment(a, "4Month_InsuranceClaimBatchReport");
 	}
 	
 	@Test(priority=17)
@@ -343,43 +348,44 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor5Month_17th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-06-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 5);
+		TestCustomReportBuilders.failORPassStatment(a, "5Month_StockRejectionRepor");
 	}
-	/*
-	@Test(priority=18)
+		//=============================scroll page here============================================
+	@Test(priority=18) //scroll the page
 	public void testCustomReportFor6Month_BillStatusReport() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor6Month_18th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		builderElements.enterFromAndToDate("01-01-2019", "10-07-2019");
-		Thread.sleep(2000);
-		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
 		
-		((JavascriptExecutor)driver).executeScript("scroll(400,1000)");
-		
-		TestCustomReportBuilders.failORPassStatment(a, 6);
+		((JavascriptExecutor)driver).executeScript("scroll(200,500)");
+		Thread.sleep(3000);
+		TestCustomReportBuilders.failORPassStatment(a, "6Month_BillStatusReport");
 	}
-	/*
+	
 	@Test(priority=19)
 	public void testCustomReportFor7Month_LaboratoryTATReport() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor7Month_19th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "12-08-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 7);
+		TestCustomReportBuilders.failORPassStatment(a, "7Month_LaboratoryTATReport");
 	}
 	
 	@Test(priority=20)
@@ -387,12 +393,14 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor8Month_20th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "15-09-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
+		
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 8);
+		TestCustomReportBuilders.failORPassStatment(a, "8Month_InsuranceCompanywiseSalesReport");
 	}
 	
 	@Test(priority=21)
@@ -400,12 +408,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor9Month_21th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "17-10-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 9);
+		TestCustomReportBuilders.failORPassStatment(a, "9Month_ListofPlansReport");
 	}
 	
 	@Test(priority=22)
@@ -413,12 +422,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor10Month_22th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "01-11-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 10);
+		TestCustomReportBuilders.failORPassStatment(a, "10Month_DenialAcceptanceReport");
 	}
 	
 	@Test(priority=23)
@@ -426,12 +436,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor11Month_23th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-12-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 11);
+		TestCustomReportBuilders.failORPassStatment(a, "11Month_NationWiseRevenueReport");
 	}
 	
 	@Test(priority=24)
@@ -439,12 +450,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor12Month_24th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-01-2020");
+		builderElements.enterFromAndToDate("01-01-2019", "06-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 12);
+		TestCustomReportBuilders.failORPassStatment(a, "12Month_NationWiseRevenueReportDepartmentWise");
 	}
 	
 	@Test(priority=25)
@@ -452,12 +464,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor1Month_25th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "31-01-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 1);
+		TestCustomReportBuilders.failORPassStatment(a, "1Month_BedOccupancyReport");
 	}
 	
 	@Test(priority=26)
@@ -465,12 +478,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor2Month_26th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "01-03-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 2);
+		TestCustomReportBuilders.failORPassStatment(a, "2Month_DRGVarianceReport");
 	}
 	
 	@Test(priority=27)
@@ -478,12 +492,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor3Month_27th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "03-04-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 3);
+		TestCustomReportBuilders.failORPassStatment(a, "3Month_DoctorPerformanceReport");
 	}
 	
 	@Test(priority=28)
@@ -491,12 +506,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor4Month_28th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "05-05-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 4);
+		TestCustomReportBuilders.failORPassStatment(a,"4Month_TherapistReport");
 	}
 	
 	@Test(priority=29)
@@ -504,12 +520,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor5Month_29th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-06-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 5);
+		TestCustomReportBuilders.failORPassStatment(a, "5Month_CustomerDueReport");
 	}
 	
 	@Test(priority=30)
@@ -517,12 +534,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor6Month_30th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "02-07-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 6);
+		TestCustomReportBuilders.failORPassStatment(a,"5Month_RemittanceAdviceReport");
 	}
 	
 	@Test(priority=31)
@@ -530,25 +548,31 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor7Month_31th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-08-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 7);
+		TestCustomReportBuilders.failORPassStatment(a, "7Month_ResubmissionReport");
 	}
 	
-	@Test(priority=32)
+	//=============================scroll page here============================================
+	
+	@Test(priority=32)//scroll the pages for webelement location
 	public void testCustomReportFor8Month_TotalSalesReport() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor8Month_32th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-09-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 8);
+		
+		((JavascriptExecutor)driver).executeScript("scroll(200,1000)");
+		TestCustomReportBuilders.failORPassStatment(a, "8Month_TotalSalesReport");
 	}
 	
 	@Test(priority=33)
@@ -556,12 +580,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor9Month_33th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-10-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 9);
+		TestCustomReportBuilders.failORPassStatment(a, "9Month_DischargeStatusReport");
 	}
 	
 	@Test(priority=34)
@@ -569,25 +594,27 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor10Month_34th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-11-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 10);
+		TestCustomReportBuilders.failORPassStatment(a, "10Month_AdvanceAndRefundReceipts");
 	}
 	
 	@Test(priority=35)
-	public void testCustomReportFor11Month_StockRejectionReport() throws InterruptedException
+	public void testCustomReportFor11Month_DepositAndRefundReceipt() throws InterruptedException
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor11Month_35th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "07-12-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 11);
+		TestCustomReportBuilders.failORPassStatment(a, "11Month_DepositAndRefundReceipt");
 	}
 	
 	@Test(priority=36)
@@ -595,12 +622,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor12Month_36th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "01-01-2020");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 12);
+		TestCustomReportBuilders.failORPassStatment(a,"12Month_PatientDueReport");
 	}
 	
 	@Test(priority=37)
@@ -608,12 +636,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor1Month_37th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "31-01-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 1);
+		TestCustomReportBuilders.failORPassStatment(a, "1Month_AppointmentTATReport");
 	}
 	
 	@Test(priority=38)
@@ -621,12 +650,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor2Month_38th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "01-03-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 2);
+		TestCustomReportBuilders.failORPassStatment(a, "2Month_PriorAuthReport");
 	}
 	
 	@Test(priority=39)
@@ -634,12 +664,13 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor3Month_39th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "03-04-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 3);
+		TestCustomReportBuilders.failORPassStatment(a, "3Month_RadiologyAlertCategoryReport");
 	}
 	
 	@Test(priority=40)
@@ -647,25 +678,26 @@ public class TestCustomReportBuilders extends BaseTest
 	{
 		String mainAddres = customTestBuilder.runCustomReportsFor4Month_40th();
 		
+		testCustomReportBuilders.testingAllTheNagativeCases();
 		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "04-05-2019");
+		builderElements.enterFromAndToDate("01-01-2019", "01-01-2019");
 		
-		boolean a =testBuilders.verifyPdfDateRange(null);
+		boolean a =testBuilders.verifyPdfDateRange("custom");
 		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 4);
+		TestCustomReportBuilders.failORPassStatment(a, "4Month_CollectionLogReport");
 	}
-	
-	@Test(priority=41)
-	public void testCustomReportFor5Month_AppointmentTATReport() throws InterruptedException
-	{
-		String mainAddres = customTestBuilder.runCustomReportsFor5Month_41th();
-		
-		builderElements.clickOnFromDateFields();
-		builderElements.enterFromAndToDate("01-01-2019", "06-06-2019");
-		
-		boolean a =testBuilders.verifyPdfDateRange(null);
-		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
-		TestCustomReportBuilders.failORPassStatment(a, 5);
-	}
-*/
+
+//	@Test(priority=41)
+//	public void testCustomReportFor5Month_AppointmentTATReport() throws InterruptedException
+//	{
+//		String mainAddres = customTestBuilder.runCustomReportsFor5Month_41th();
+//		
+//		builderElements.clickOnFromDateFields();
+//		builderElements.enterFromAndToDate("01-01-2019", "06-06-2019");
+//		
+//		boolean a =testBuilders.verifyPdfDateRange(null);
+//		TestCustomReportBuilders.closeAndSwitchTab(mainAddres);
+//		TestCustomReportBuilders.failORPassStatment(a, 5);
+//	}
+
 }
